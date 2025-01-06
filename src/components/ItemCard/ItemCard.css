@@ -1,0 +1,110 @@
+.itemcard {
+  position: relative;
+  width: 300px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 25px;
+  z-index: 1;
+  cursor: pointer;
+  backdrop-filter: blur(0);
+  transition: transform 0.1s ease-in-out;
+}
+
+.itemcard:hover {
+  transform: scale(1.02);
+  outline: 4px solid white;
+  outline-offset: 5px;
+}
+
+.itemcard h3 {
+  position: absolute;
+  bottom: 70px;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  padding: 0 15px;
+}
+
+.itemcard p {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.itemcard img {
+  display: block;
+  width: 300px;
+  height: 300px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.1s ease-in-out;
+}
+
+.itemcard:hover > img {
+  transform: scale(1.04);
+}
+
+.itemcard svg {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: text-top;
+  margin-right: 5px;
+}
+
+.bundle {
+  width: 400px;
+}
+
+.track {
+  border-radius: 5px;
+  display: flex;
+  height: 150px;
+  width: 400px;
+}
+
+.track img {
+  margin-top: 0;
+  height: 150px;
+  width: 150px;
+}
+
+.track h3 {
+  font-size: 40px;
+  margin-top: 20px;
+  max-height: 50%;
+  overflow: hidden;
+  position: static;
+  text-align: center;
+}
+
+.track p {
+  bottom: 10px;
+  padding-left: 160px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 540px) {
+  .itemcard h3 {
+    font-size: 40px;
+  }
+
+  .itemcard:not(.track) img {
+    height: 280px;
+    margin-top: 60px;
+    width: 280px;
+  }
+
+  .bundle, .track {
+    width: 300px;
+  }
+
+  .track h3 {
+    font-size: 30px;
+  }
+}

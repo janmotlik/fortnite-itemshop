@@ -1,0 +1,129 @@
+.modal-background {
+  background-color: #000000cc;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 90%;
+  min-height: 60%;
+  width: 50%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.close-icon {
+  font-size: 25px;
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.modal-content h2 {
+  border-bottom: 1px solid white;
+  font-size: 60px;
+  margin: 0 20px 40px;
+  padding-bottom: 10px;
+  line-height: 60px;
+}
+
+.item-bg p {
+  max-width: 50%;
+  font-size: 40px;
+  margin: 0 20px 10px 20px;
+  line-height: 40px;
+  text-align: left;
+}
+
+.modal-content img {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  right: 35px;
+  top: 100px;
+}
+
+.modal-content svg {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 5px;
+}
+
+.item-bg {
+  background: linear-gradient(to bottom, #022445, #06599D);
+}
+
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: #83A7C8;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 1920px) {
+  .modal-content {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .modal-content {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+
+  .modal-content img {
+    display: none;
+  }
+
+  .modal-content p {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .modal-content h2 {
+    font-size: 50px;
+  }
+
+  .item-bg p {
+    font-size: 30px;
+  }
+
+  .modal-content p svg {
+    height: 25px;
+    width: 25px;
+  }
+
+  .modal-content button {
+    font-size: 22px;
+    padding: 8px 25px 8px 20px;
+    height: 45px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .modal-content button {
+    font-size: 18px;
+    padding: 8px 20px 8px 15px;
+    height: 40px;
+  }
+}

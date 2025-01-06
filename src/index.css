@@ -1,0 +1,19 @@
+/* Import fortnite font */
+@font-face {
+  font-family: 'fortnite';
+  src: url('../public/fonts/fortnite.otf') format('opentype');
+}
+
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styling */
+body {
+  background: linear-gradient(#022445, #06599D) no-repeat fixed;
+  color: white;
+  font-family: 'fortnite', sans-serif;
+}

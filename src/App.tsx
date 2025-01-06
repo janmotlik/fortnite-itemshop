@@ -1,6 +1,6 @@
 import Navigation from './components/Navigation/Navigation.tsx'
 import Footer from './components/Footer/Footer.tsx'
-import ShopData from './components/ ShopData/ShopData.tsx'
+import ShopData from './components/ShopData/ShopData.tsx'
 import useFilters from './hooks/useFilters.ts'
 import useFavorites from './hooks/useFavorites.ts'
 

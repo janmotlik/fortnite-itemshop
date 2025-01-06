@@ -7,7 +7,7 @@ import FilterModal from '../Modal/FilterModal/FilterModal.tsx'
 
 interface NavigationProps {
   filters: any
-  updateFilters: () => void
+  updateFilters: (key: any, value: any) => void
   resetFilters: () => void
 }
 
@@ -20,7 +20,9 @@ export default function Navigation({ filters, updateFilters, resetFilters }: Nav
           <img src="/assets/icon.png" alt="site logo"/>
           <h1>Fortnite Shop</h1>
           <Button variant={"primary"} onClick={() => setModalOpen(!isModalOpen)} icon={<FontAwesomeIcon icon={faFilter}/>} value={"Filter"}/>
-          <input type="text" placeholder="Search by name" onKeyUp={(e) => updateFilters('query', e.target.value)}/>
+          <input type="text" placeholder="Search by name" onKeyUp={(e) => updateFilters('query',
+            // @ts-ignore
+            e.target.value)}/>
         </nav>
 
         <FilterModal isOpen={isModalOpen} onClose={() => setModalOpen(!isModalOpen)} filters={filters} updateFilters={updateFilters} resetFilters={resetFilters} />

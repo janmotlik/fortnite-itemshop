@@ -25,5 +25,5 @@ export function getImage(entry: any) {
       : displayAsset.materialInstances[0]?.images?.OfferImage;
   }
   if (entry.instruments) return entry.instruments[0].images.large;
-  return entry.cars[0].images.large;
+  return entry.cars?.[0].images.large ?? "";
 }
